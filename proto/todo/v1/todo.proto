@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto.todo.v1;
+option go_package = "./pb/auth";
+
+message Todo{
+	string id = 1;
+	string owner_id = 2;
+	string title = 3;
+	string description = 4;
+	bool done = 5;
+}
